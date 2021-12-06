@@ -3,7 +3,7 @@ import os
 import csv
 from PyQt5.QtWidgets import QFileDialog, QMessageBox, QWidget, QApplication
 from PyQt5 import QtCore
-import files_name
+import rename_ui
 
 # QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
 
@@ -14,7 +14,7 @@ class FilesName(QWidget):
         self.initUI()
 
     def initUI(self):
-        self.ui = files_name.Ui_Form()
+        self.ui = rename_ui.Ui_Form()
         self.ui.setupUi(self)
         self.setWindowTitle('批量修改文件名小程序')
         self.method_fn()
